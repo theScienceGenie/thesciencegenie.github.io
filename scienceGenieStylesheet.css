@@ -1,0 +1,68 @@
+
+
+h1 {
+    font-size: 36px;
+    font-family: Sans-Serif;
+	text-align: center;
+}
+p {
+    font-size: 20px;
+    font-family: Roboto, Sans-Serif;
+	text-align: center;
+}
+body {
+    ! background-image: url("Science Genie.png");
+    ! background-repeat: repeat-x;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.panelImage:hover {
+	animation-name: hoverScale;
+	animation-duration: 250ms;
+	animation-fill-mode: forwards;
+}
+@keyframes hoverScale{
+	100% {
+		transform: scale(1.05);
+	}
+}
+
+input[type="button"] {
+    background-color: palegreen;
+}
+input[type="button"]:hover {
+	background-color: green;
+}
+
+
+.stuff {
+    text-align: center;
+}
+.articleText {
+    font-weight: bold;
+    text-align: center;
+}
+.wrapperGrid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pageGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: center;
+}
+.shadowImage {
+	box-shadow: 0px 0px 5px 5px #777777;
+}
+
+
+#scienceGenieText {
+    max-width: 50%;
+}
+#nameSpace {
+    text-align: center;
+}

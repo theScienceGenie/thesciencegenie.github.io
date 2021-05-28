@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          type = "text/css"
+          href = "scienceGenieStylesheet.css" />
+
+    <title>HOME - theScienceGenie</title>
+    <link rel="icon" type="image/png" href="scienceGenieFavicon.png">
+
+    <script>
+        function helloName() {
+            var name = document.getElementById("nameBox");
+            var nameText = name.value;
+
+            var newItem = document.createElement("p");
+            newItem.onclick = removeItem;
+            newItem.innerHTML = "Greetings, " + nameText + "!";
+            document.getElementById("nameSpace").appendChild(newItem);
+        }
+
+        function removeItem() {
+            document.getElementById("nameSpace").removeChild(this);
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="stuff">
+    <img id="scienceGenieText" src="scienceGenieText.png">
+    <p onclick="alert('secret message');";>Welcome to the Science Genie webzone!</p>
+    <p>Enjoy learning about science</p> <br>
+    <p>Enter your name here:
+        <input id="nameBox" type="text" placeholder="my name is...">
+        <input type="button" onclick="helloName();" value="OK"/>
+    </p>
+</div>
+
+<div id="nameSpace"></div>
+
+<div class="wrapperGrid">
+        <a href="./BriansSimpleWebsitePt1/">
+            <img src="Brian's Simple Website (pt.1).png" class="panelImage">
+	</a>
+        <a href="./BriansSimpleWebsitePt2/index.html">
+            <img src="Brian's Simple Website (pt.2).png" class="panelImage">
+        </a>
+        <a href="./BriansSimpleWebsitePt3/index.html">
+            <img src="Brian's Simple Website (pt.3).png" class="panelImage">
+        </a>
+
+<!--        <a href="http://thesciencegenie.42web.io/BasicJavaScriptPt1/">-->
+            <img src="Basic JavaScript (pt.1).png" class="panelImage">
+<!--        </a>-->
+</div>
+
+</body>
+</html>
