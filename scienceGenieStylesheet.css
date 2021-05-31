@@ -1,5 +1,5 @@
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-family: Sans-Serif;
 	text-align: center;
 }
@@ -7,10 +7,6 @@ p {
     font-size: 20px;
     font-family: Roboto, Sans-Serif;
 	text-align: center;
-}
-body {
-    ! background-image: url("Science Genie.png");
-    ! background-repeat: repeat-x;
 }
 img {
     max-width: 100%;
